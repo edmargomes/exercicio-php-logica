@@ -13,5 +13,22 @@
         <input type="number" name="valor">
         <input type="submit" value="Enviar">
     </form>
+    <?php
+        if ($_POST['valor']) {
+            $value = $_POST['valor'];
+
+            if ($value % 10 == 0)
+                echo "<div>Esse número é divisivel por 10.</div>";
+
+            if ($value % 5 == 0)
+                echo "<div>Esse número é divisivel por 5.</div>";
+
+            if ($value % 2 == 0)
+                echo "<div>Esse número é divisivel por 2.</div>";
+
+            if ($value % 10 != 0 && $value % 5 != 0 && $value % 2 != 0)
+                echo "<div>Esse número não é divisivel por 10, 5 ou 2.</div>";
+        }
+    ?>
 </body>
 </html>

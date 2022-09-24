@@ -58,31 +58,31 @@ class Exercicio2Cest
         // eu clico em Enviar
         $I->click('Enviar');
         // Eu vejo "Esse número é divisivel por 5."
-        //$I->see('Esse número é divisivel por 5.');
+        $I->see('Esse número é divisivel por 5.');
 
         // Eu digito 7 no campo valor
         $I->fillField("valor", "7");
         // eu clico em Enviar
         $I->click('Enviar');
         // Eu vejo "Esse número não é divisivel por 10, 5 ou 2"
-        //$I->see('Esse número não é divisivel por 10, 5 ou 2.');
+        $I->see('Esse número não é divisivel por 10, 5 ou 2.');
 
         // Eu digito 10 no campo valor
         $I->fillField("valor", "10");
         // eu clico em Enviar
         $I->click('Enviar');
         // Eu vejo "Esse número é divisivel por 10."
-        //$I->see('Esse número não é divisivel 10.');
+        $I->see('Esse número é divisivel por 10.');
         // Eu vejo "Esse número é divisivel por 5."
-        //$I->see('Esse número não é divisivel 5.');
+        $I->see('Esse número é divisivel por 5.');
         // Eu vejo "Esse número é divisivel por 2."
-        //$I->see('Esse número é divisivel por 2.');
+        $I->see('Esse número é divisivel por 2.');
 
         // Eu digito 12 no campo valor
         $I->fillField("valor", "12");
         // eu clico em Enviar
         $I->click('Enviar');
         // Eu vejo "Esse número é divisivel por 2."
-        //$I->see('Esse número é divisivel por 2.');
+        $I->see('Esse número é divisivel por 2.');
     }
 }
