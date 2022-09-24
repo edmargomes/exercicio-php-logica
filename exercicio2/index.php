@@ -8,6 +8,10 @@
 </head>
 <body>
     <h1>Exercício 2</h1>
-    
+    <form action="/exercicio2" method="post">
+        <label for="valor">Digite um valor:</label>
+        <input type="number" name="valor">
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>

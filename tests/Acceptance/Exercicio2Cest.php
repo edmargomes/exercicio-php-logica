@@ -11,6 +11,9 @@ class Exercicio2Cest
     {
     }
 
+    /**
+     * Fazendo teste do indice para o exercicio 2.
+     */
     public function IndiceExercicio2Test(AcceptanceTester $I)
     {
         $I->amOnPage("/");
@@ -20,7 +23,10 @@ class Exercicio2Cest
         $I->click("Exercício 2");
         $I->seeInTitle("Exercício 2");
     }
-    // tests
+
+    /**
+     * Testando o titulo do exercicio 2 na pagina inicial do exercicio 2
+     */
     public function TitleExercicio2Test(AcceptanceTester $I)
     {
         //Eu estou na pagina "exercicio2"
@@ -33,6 +39,9 @@ class Exercicio2Cest
         $I->see('Exercício 2', 'h1');
     }
 
+    /**
+     * Testes das divisões, o proprio exercicio 2
+     */
     public function FormExercicio2Test(AcceptanceTester $I)
     {
         /**
@@ -42,36 +51,38 @@ class Exercicio2Cest
          */
         // Eu estou na pagina "exercicio2"
         $I->amOnPage("/exercicio2");
+        // Eu vejo "Digita um valor:"
+        $I->see('Digite um valor:');
         // Eu digito 5 no campo valor
         $I->fillField("valor", "5");
         // eu clico em Enviar
         $I->click('Enviar');
         // Eu vejo "Esse número é divisivel por 5."
-        $I->see('Esse número é divisivel por 5.');
+        //$I->see('Esse número é divisivel por 5.');
 
         // Eu digito 7 no campo valor
         $I->fillField("valor", "7");
         // eu clico em Enviar
         $I->click('Enviar');
         // Eu vejo "Esse número não é divisivel por 10, 5 ou 2"
-        $I->see('Esse número não é divisivel por 10, 5 ou 2.');
+        //$I->see('Esse número não é divisivel por 10, 5 ou 2.');
 
         // Eu digito 10 no campo valor
         $I->fillField("valor", "10");
         // eu clico em Enviar
         $I->click('Enviar');
         // Eu vejo "Esse número é divisivel por 10."
-        $I->see('Esse número não é divisivel 10.');
+        //$I->see('Esse número não é divisivel 10.');
         // Eu vejo "Esse número é divisivel por 5."
-        $I->see('Esse número não é divisivel 5.');
+        //$I->see('Esse número não é divisivel 5.');
         // Eu vejo "Esse número é divisivel por 2."
-        $I->see('Esse número é divisivel por 2.');
+        //$I->see('Esse número é divisivel por 2.');
 
         // Eu digito 12 no campo valor
         $I->fillField("valor", "12");
         // eu clico em Enviar
         $I->click('Enviar');
         // Eu vejo "Esse número é divisivel por 2."
-        $I->see('Esse número é divisivel por 2.');
+        //$I->see('Esse número é divisivel por 2.');
     }
 }
