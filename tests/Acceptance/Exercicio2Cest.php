@@ -11,6 +11,15 @@ class Exercicio2Cest
     {
     }
 
+    public function IndiceExercicio2Test(AcceptanceTester $I)
+    {
+        $I->amOnPage("/");
+
+        //Eu vejo "Exercício 2"
+        $I->see('Exercício 2');
+        $I->click("Exercício 2");
+        $I->seeInTitle("Exercício 2");
+    }
     // tests
     public function TitleExercicio2Test(AcceptanceTester $I)
     {

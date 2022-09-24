@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Indice</h1>
-    <a href="/exercicio1">Exercicio 1</a>
+    <a href="/exercicio1">Exercicio 1</a><BR>
+    <a href="/exercicio2">Exercício 2</a>
 </body>
 </html>
